@@ -8,7 +8,7 @@ export const CypherOne = observer(() => {
   const vm = useRef(new CypherValues()).current;
   return (
     <Fragment>
-      <svg width={800} height={800} className="svg-top">
+      <svg width={vm.TOTAL_AREA[0]} height={vm.TOTAL_AREA[1]} className="svg-top">
         <g fill="gray" stroke="black" strokeWidth={3}>
           <path
             d={`
@@ -70,9 +70,6 @@ export const CypherOne = observer(() => {
               a ${vm.RADIUS},${vm.RADIUS} 0 1,1 ${vm.DIAMETER},0
               a ${vm.RADIUS},${vm.RADIUS} 0 1,1 -${vm.DIAMETER},0
             `}
-            onClick={(e) => {
-              vm.handleClick(e, 1, vm.ringRotations[1]);
-            }}
           />
         </g>
         <g fill="none" stroke="cyan" strokeWidth={5}>
@@ -214,9 +211,6 @@ export const CypherOne = observer(() => {
               pointOnCircle(vm.overallRotation + vm.ringRotations[1], vm.RADIUS * 1)[0]
             },${pointOnCircle(vm.overallRotation + vm.ringRotations[1], vm.RADIUS * 1)[1]}
             `}
-            onClick={(e) => {
-              vm.handleClick(e, 1, vm.ringRotations[1]);
-            }}
           />
         </g>
       </svg>

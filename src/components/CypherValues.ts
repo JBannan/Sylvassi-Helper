@@ -2,8 +2,8 @@ import { observable, action, makeAutoObservable } from "mobx";
 import { rotateCounterClockwise, rotateClockwise } from "./math";
 
 export class CypherValues {
-  readonly TOTAL_AREA = [800, 800];
-  readonly CENTER = [this.TOTAL_AREA[0] / 2, this.TOTAL_AREA[1] / 2];
+  readonly TOTAL_AREA = [700, 700];
+  readonly CENTER = [this.TOTAL_AREA[0] / 2.2, this.TOTAL_AREA[1] / 2];
   readonly DIAMETER = 90;
   readonly RADIUS = this.DIAMETER / 2;
   readonly CORE = this.DIAMETER / 2;
