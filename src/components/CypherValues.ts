@@ -10,6 +10,8 @@ export class CypherValues {
   readonly CIRCLE_OFFSET = this.CENTER[0] - this.CORE;
   readonly LINE_OFFSET = this.CENTER[1] + this.CORE;
 
+  overallRotation = 0;
+
   constructor() {
     makeAutoObservable(this);
   }
@@ -80,6 +82,14 @@ export class CypherValues {
   }
   setRotation1(angle: number) {
     this.ringRotations[1] = angle;
+  }
+
+  rotateCypherCW() {
+    this.overallRotation = rotateClockwise(this.overallRotation);
+  }
+
+  rotateCypherCCW() {
+    this.overallRotation = rotateCounterClockwise(this.overallRotation);
   }
 
   resetCypher() {
