@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Sylvassi-Helper/static/css/main.75f9d993.css",
+    "main.js": "/Sylvassi-Helper/static/js/main.a99ff89d.js",
+    "static/js/453.165b80cc.chunk.js": "/Sylvassi-Helper/static/js/453.165b80cc.chunk.js",
+    "index.html": "/Sylvassi-Helper/index.html",
+    "main.75f9d993.css.map": "/Sylvassi-Helper/static/css/main.75f9d993.css.map",
+    "main.a99ff89d.js.map": "/Sylvassi-Helper/static/js/main.a99ff89d.js.map",
+    "453.165b80cc.chunk.js.map": "/Sylvassi-Helper/static/js/453.165b80cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75f9d993.css",
+    "static/js/main.a99ff89d.js"
+  ]
+}
